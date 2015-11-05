@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - Projet FeedBack 360</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src='js/Chart.js-master/Chart.js'></script>
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Projet FeedBack 360</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="index.html">Home page</a></li>
+       <li class="active"><a href="liste_etu.html">Liste des étudiants</a></li>
+        <li class="active"><a href="profil_etu.html">Profil étudiants</a></li>
+        <li class="active"><a href="mes_projets.html">Mes projets</a></li>
+      <li class="has-dropdown">
+        <a href="#">Comtpe</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+   
+  <div class="row etu_description">
+    <div class="large-6 columns">
+      <h2>Nom étudiant</h2> 
+    </div>
+  </div>
+
+  <div class="row etu_overview">
+    <div class="medium-4 columns legende">
+
+      <h3>Légende</h3>
+
+    </div>
+    <div class="medium-4 columns swot">
+      <h3>Profil</h3>
+      <canvas id="SWOT_etu" width="250" height="250"></canvas>
+
+        <script>
+            // Radar Graph
+            var SWOT_etuData = {
+               labels: ["Esprit d'équipe", "Ponctualité", "Communication", "Ecoute", "Confiance"],
+    datasets: [
+
+        {   
+                    label: "My Second dataset",
+            fillColor: "rgba(240,51,9,0.2)",
+            strokeColor: "rgba(240,51,9,1)",
+            pointColor: "rgba(240,51,9,1)",
+            pointStrokeColor: "#F03309",
+            pointHighlightFill: "#F03309",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 96]
+        }
+    ]
+            }
+            // get line chart canvas
+            var SWOT_etu = document.getElementById('SWOT_etu').getContext('2d');
+            // draw line chart
+            new Chart(SWOT_etu).Radar(SWOT_etuData);
+            
+        </script>
+
+    </div>
+    <div class="medium-4 columns note">
+<h3>Note Global</h3>
+<div class="note_global">
+  3,75/5
+</div>
+    </div>
+  </div>
+
+  <div class="row  etu_projet">
+
+
+      <h3>Liste des projets de l'étudiant</h3>
+ <div class="medium-4 columns">
+          <ul class="tabs" data-tab role="tablist">
+  <li class="tab-title active" role="presentation"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1">Tout les projets</a></li>
+  <li class="tab-title" role="presentation"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2">Projets de 1ère année</a></li>
+  <li class="tab-title" role="presentation"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3">Projets de 2ème année</a></li>
+  <li class="tab-title" role="presentation"><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-4">Projets de 3ème année</a></li>
+  <li class="tab-title" role="presentation"><a href="#panel2-5" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-5">Projets de 4ème année</a></li>
+  <li class="tab-title" role="presentation"><a href="#panel2-6" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-6">Projets de 5ème année</a></li>
+</ul>
+</div>
+<div class="medium-8 columns">
+<div class="tabs-content">
+  <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+    
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+    
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+   
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
+    
+  </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-5">
+    
+  </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-6">
+    
+  </section>
+</div>
+</div>
+
+       </div>
+  </div>
+
+   <div class="row  etu_progression">
+    <div class="large-12 columns">
+      <h3>Progression</h3>
+          <canvas id="Progression_etu" width="775" height="350"></canvas>
+
+        <script>
+            // Radar Graph
+            var Progression_etuData = {
+               labels: ["Projet de début d'année", "FT1", "FT2", "FT3", "Projet de fin d'année", "Copycat"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(240,51,9,0.2)",
+            strokeColor: "rgba(240,51,9,1)",
+            pointColor: "rgba(240,51,9,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55]
+        },
+    ]
+            }
+            // get line chart canvas
+            var Progression_etu = document.getElementById('Progression_etu').getContext('2d');
+            // draw line chart
+            new Chart(Progression_etu).Line(Progression_etuData);
+            
+</script>
+
+       </div>
+  </div>
+
+  <div class="row  etu_linkedin">
+    <div class="large-12 columns">
+  <h3>API Linkedin</h3> </div>
+  </div>
+
+
+  <div class="panel footer">
+    <div class="row">
+      footer
+    </div>
+  </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

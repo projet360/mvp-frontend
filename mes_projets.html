@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes projets - Projet FeedBack 360</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Projet FeedBack 360</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+       <li class="active"><a href="index.html">Home page</a></li>
+       <li class="active"><a href="liste_etu.html">Liste des étudiants</a></li>
+        <li class="active"><a href="profil_etu.html">Profil étudiants</a></li>
+        <li class="active"><a href="mes_projets.html">Mes projets</a></li>
+      <li class="has-dropdown">
+        <a href="#">Comtpe</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+   
+  <div class="row mes_projets">
+  <ul class="tabs" data-tab role="tablist">
+  <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Projets à noter</a></li>
+  <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Projets notés</a></li>
+
+</ul>
+<div class="tabs-content ">
+  <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+
+    <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Liste des projets</button><br>
+      <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+        <li><a href="#" id="1">PFA</a></li>
+        <li><a href="#" id="2">FT3</a></li>
+        <li><a href="#" id="3">FT2</a></li>
+      </ul>
+
+
+
+
+<div class="bloc_notes_etu">
+   <div class="row">
+    <div class="small-4 columns notes_etu">étudiant 1</div>
+    <div class="small-4 columns notes_etu">étudiant 2</div>
+    <div class="small-4 columns notes_etu">étudiant 3</div>
+    </div>
+    <div class="row">
+    <div class="small-4 columns notes_etu">étudiant 1</div>
+    <div class="small-4 columns notes_etu">étudiant 2</div>
+    <div class="small-4 columns notes_etu">étudiant 3</div>
+    </div>
+</div>
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+   
+ <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Liste des projets</button><br>
+      <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+        <li><a href="#" id="1">PFA</a></li>
+        <li><a href="#" id="2">FT3</a></li>
+        <li><a href="#" id="3">FT2</a></li>
+      </ul>
+
+  </section>
+</div>
+</div>
+
+<div class="row">
+    <div class="row">
+    <h3>2eme annèe</h3>
+      <div class="small-4 columns note_projet" data-tooltip aria-haspopup="true" class="tip-right" title="Quentin Guillaume Arthur Florian">FT1</div>
+      <div class="small-4 columns  note_projet" data-tooltip aria-haspopup="true" class="tip-right" title="Quentin Guillaume Arthur Florian">FT2</div>
+      <div class="small-4 columns  note_projet" data-tooltip aria-haspopup="true" class="tip-right" title="Quentin Guillaume Arthur Florian">FT3</div>
+    </div>
+    <div class="row">
+      <h3>3eme annèe</h3>
+      <div class="small-4 columns  note_projet" data-tooltip aria-haspopup="true" class="tip-right" title="Quentin Guillaume Arthur Florian">Copy Cat</div>
+      <div class="small-4 columns  note_projet" data-tooltip aria-haspopup="true" class="tip-right" title="Quentin Guillaume Arthur Florian">...</div>
+     <div class="small-4 columns  note_projet" data-tooltip aria-haspopup="true" class="tip-right" title="Quentin Guillaume Arthur Florian">...</div>
+    </div>
+  </div>
+
+  <div class="panel footer">
+    <div class="row">
+      footer
+    </div>
+  </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+    $( "div:visible" ).click(function() {
+      $( this ).css( );
+    });
+    $( "#1" ).click(function() {
+      $( "div:hidden" ).show( "fast" );
+    });
+  </script>
+  </body>
+</html>

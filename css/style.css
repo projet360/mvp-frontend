@@ -1,0 +1,245 @@
+/* CSS Général */
+body {
+	background-color: #2a3642;
+	line-height: 1.1;
+}
+
+.orbit-bullets {
+	display: none;
+}
+
+.orbit-slide-number {
+	display: none;
+}
+
+.row {
+	margin-top:20px;
+}
+
+.panel {
+	margin-bottom:0;
+}
+
+.footer {
+	margin-top: 20px;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background-color: #e1ebf5;
+	color: #2a3642;
+	line-height:88px;
+	font-size: 18px;
+}
+.top-bar {
+	height:90px;
+	background-color:#e1ebf7;
+	border-bottom:2px solid #f03309;
+}
+.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
+    color: #ff350d;
+    display: block;
+    font-weight: normal;
+    padding: 0 0.9375rem;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: #ff350d;
+    color: #e1ebf5;
+    
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: #ff350d;
+    line-height: 88px;
+    font-size: 18px;
+    padding: 0 0.9375rem;
+}
+
+
+.top-bar li img {
+	margin:10px;
+
+}
+
+
+
+
+
+ul li a {
+	height:88px;
+}
+h2, h1, h3 {
+color:#f03309;
+}
+/* Fin CSS Général */
+
+/* CSS Home Page */
+
+.home_etudiant {
+	background-color:#e1ebf7;
+	height: 300px;
+}
+
+
+.example-orbit-content h2 {
+	padding-left:30px;
+	padding-top:10px;
+}
+
+.example-orbit-content img {
+	padding-left:30px;
+	padding-bottom: 10px;
+}
+
+
+.home_description {
+	background-color:#e1ebf7;
+}
+
+.home_projet {
+	background-color:#e1ebf7;
+	height: 300px;
+}
+
+#slide-bar {
+	width: 8%;
+	height: 75%;
+	background-color: red;
+}
+
+#slide-bar-text {
+	max-width: 8%;
+	font-size:10px;
+}
+#row-1-projet {
+
+
+    height: 35%;
+    margin-left: 15%;
+    border-style: ;
+
+}
+#row-2-projet{
+
+
+    height: 35%;
+    margin-left: 15%;
+}
+#text-projet {    
+font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 0;
+    text-rendering: optimizeLegibility;
+}
+
+.border-col {
+    border-style: solid;
+    border-color: #f03309;
+}
+
+
+	.home_projet_bis 	{
+	background-color:#e1ebf7;
+	height: 500px; }
+/* Fin CSS Home page */
+
+/* CSS profil_etu.html */
+
+.etu_overview {
+	height: 300px;
+}
+
+.etu_overview .note {
+	background-color:#e1ebf7;
+	height: 300px;
+}
+
+.etu_overview .legende {
+	background-color: lightyellow;
+	height: 300px;
+}
+
+.etu_overview .swot {
+	background-color: lightpink;
+	height: 300px;
+}
+
+.etu_description {
+	background-color:lightgreen;
+	height: 100px;
+}
+
+
+.etu_projet {
+	background-color:#e1ebf7;
+}
+
+.etu_progression {
+	background-color:#e1ebf7;
+}
+
+.etu_linkedin {
+	background-color:lightgreen;
+	height: 300px;
+}
+
+.etu_projet .tabs dd > a, .tabs .tab-title > a {
+	background-color:#e1ebf7;
+	border:2px solid #f03309;
+	    line-height: 40px;
+    text-align: center;
+    padding: 0;
+    color:#f03309;
+}
+
+.etu_projet .tab-title {
+	margin-top:8px;
+	margin-bottom: 8px;
+	width: 190px;
+}
+.etu_projet ul li a {
+	height:40px;
+}
+
+.etu_projet .tabs dd.active a, .tabs .tab-title.active a {
+	background-color: #f03309;
+	color:white;
+}
+
+.note .note_global {
+	    text-align: center;
+    font-size: 80px;
+    color: #f03309;
+    line-height: 200px;
+}
+
+/* Fin CSS profil_etu.html */
+
+/* CSS Liste étu */
+
+.liste_etu .tabs-content {
+	height: 400px;
+	background-color:lightblue;
+}
+
+/* CSS Fin liste étu */
+
+/* CSS Mes projets */
+.notes_etu {
+	height:200px;
+	background-color:lightblue;
+	border:1px #FFF solid;
+}
+
+.note_projet {
+	height:200px;
+	background-color:lightgreen;
+	border:1px #FFF solid;
+}
+
+
+.bloc_notes_etu {
+    display: none;
+  }
+
+
+/* CSS Fin Mes projets */

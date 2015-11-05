@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chart.js demo</title>
+        <!-- import plugin script -->
+        <script src='Chart.js'></script>
+    </head>
+    <body>
+        <!-- line chart canvas element -->
+        <canvas id="SWOT_etu" width="250" height="250"></canvas>
+
+        <script>
+        //#F03309//
+            // line chart data
+            var SWOT_etuData = {
+               labels: ["Esprit d'équipe", "Ponctualité", "Communication", "Ecoute", "Confiance"],
+    datasets: [
+
+        {   
+                    label: "My Second dataset",
+            fillColor: "rgba(240,51,9,0.2)",
+            strokeColor: "rgba(240,51,9,1)",
+            pointColor: "rgba(240,51,9,1)",
+            pointStrokeColor: "#F03309",
+            pointHighlightFill: "#F03309",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 96]
+        }
+    ]
+            }
+            // get line chart canvas
+            var SWOT_etu = document.getElementById('SWOT_etu').getContext('2d');
+            // draw line chart
+            new Chart(SWOT_etu).Radar(SWOT_etuData);
+            
+        </script>
+    </body>
+</html>
